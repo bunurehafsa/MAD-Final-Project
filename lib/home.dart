@@ -17,10 +17,9 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final ImagePicker _picker = ImagePicker();
-  
+
   String? scannedResult;
 
-  
   // Future<void> scanFromGallery() async {
   //   final XFile? pickedFile = await _picker.pickImage(source: ImageSource.gallery);
   //   if (pickedFile != null) {
@@ -104,11 +103,11 @@ class _HomeScreenState extends State<HomeScreen> {
               leading: const Icon(Icons.history),
               title: const Text('History'),
               onTap: () {
-               Navigator.of(context).push(
+                Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) => const History(),
                   ),
-               );
+                );
               },
             ),
             ListTile(
@@ -122,11 +121,11 @@ class _HomeScreenState extends State<HomeScreen> {
               leading: const Icon(Icons.settings),
               title: const Text('Settings'),
               onTap: () {
-               Navigator.of(context).push(
+                Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) => const Settings(),
                   ),
-               );
+                );
               },
             ),
             ListTile(
@@ -164,44 +163,46 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 ElevatedButton(
                   style: ButtonStyle(
-                    shape: MaterialStateProperty.all(const RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(30))
-                    )),
-                    foregroundColor: MaterialStateProperty.all(Color.fromARGB(255, 78, 18, 134)),
-                    backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 216, 210, 219)),
+                    shape: MaterialStateProperty.all(
+                        const RoundedRectangleBorder(
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(30)))),
+                    foregroundColor: MaterialStateProperty.all(
+                        Color.fromARGB(255, 78, 18, 134)),
+                    backgroundColor: MaterialStateProperty.all(
+                        Color.fromARGB(255, 216, 210, 219)),
                     textStyle: MaterialStateProperty.all(const TextStyle(
-                      fontSize: 16,fontWeight: FontWeight.w500
-                    )),
+                        fontSize: 16, fontWeight: FontWeight.w500)),
                     padding: MaterialStateProperty.all(
-                      const EdgeInsets.symmetric(horizontal: 20, vertical: 15)
-                    ),
+                        const EdgeInsets.symmetric(
+                            horizontal: 20, vertical: 15)),
                   ),
                   onPressed: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => const QR_Scanner()
-                    ));
+                        builder: (context) => const QR_Scanner()));
                   },
                   child: const Text('Scan QR Code'),
                 ),
                 const SizedBox(height: 30),
                 ElevatedButton(
                   style: ButtonStyle(
-                    shape: MaterialStateProperty.all(const RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(30))
-                    )),
-                    foregroundColor: MaterialStateProperty.all( Color.fromARGB(255, 78, 18, 134)),
-                    backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 216, 210, 219)),
+                    shape: MaterialStateProperty.all(
+                        const RoundedRectangleBorder(
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(30)))),
+                    foregroundColor: MaterialStateProperty.all(
+                        Color.fromARGB(255, 78, 18, 134)),
+                    backgroundColor: MaterialStateProperty.all(
+                        Color.fromARGB(255, 216, 210, 219)),
                     textStyle: MaterialStateProperty.all(const TextStyle(
-                      fontSize: 16,fontWeight: FontWeight.w500
-                    )),
+                        fontSize: 16, fontWeight: FontWeight.w500)),
                     padding: MaterialStateProperty.all(
-                      const EdgeInsets.symmetric(horizontal: 20, vertical: 15)
-                    ),
+                        const EdgeInsets.symmetric(
+                            horizontal: 20, vertical: 15)),
                   ),
                   onPressed: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => const QR_Generator()
-                    ));
+                        builder: (context) => const QR_Generator()));
                   },
                   child: const Text('Generate QR Code'),
                 ),

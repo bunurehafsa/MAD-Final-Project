@@ -49,7 +49,10 @@ class _AboutpageState extends State<Aboutpage> {
                 const SizedBox(height: 20),
                 const Text(
                   'About This App',
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
+                  style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
                 ),
                 const SizedBox(height: 10),
                 const Text(
@@ -59,7 +62,10 @@ class _AboutpageState extends State<Aboutpage> {
                 const SizedBox(height: 20),
                 const Text(
                   'Features',
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
                 ),
                 const SizedBox(height: 10),
                 const Text(
@@ -72,7 +78,10 @@ class _AboutpageState extends State<Aboutpage> {
                 const SizedBox(height: 20),
                 const Text(
                   'Our Mission',
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
                 ),
                 const SizedBox(height: 10),
                 const Text(
@@ -82,7 +91,10 @@ class _AboutpageState extends State<Aboutpage> {
                 const SizedBox(height: 20),
                 const Text(
                   'The Team',
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
                 ),
                 const SizedBox(height: 10),
                 const Text(
@@ -92,7 +104,10 @@ class _AboutpageState extends State<Aboutpage> {
                 const SizedBox(height: 20),
                 const Text(
                   'Contact Us',
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
                 ),
                 const SizedBox(height: 10),
                 const Text(
@@ -105,7 +120,10 @@ class _AboutpageState extends State<Aboutpage> {
                 const SizedBox(height: 20),
                 Text(
                   'Version: $appVersion',
-                  style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),
+                  style: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
                 ),
               ],
             ),
@@ -115,5 +133,3 @@ class _AboutpageState extends State<Aboutpage> {
     );
   }
 }
-
-      

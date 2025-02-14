@@ -56,7 +56,7 @@ class _QR_GeneratorState extends State<QR_Generator> {
           globalKey.currentContext!.findRenderObject() as RenderRepaintBoundary;
       var image = await boundary.toImage(pixelRatio: 3.0);
       ByteData? byteData = await image.toByteData(format: ImageByteFormat.png);
-      
+
       // Debug print added here
       if (byteData == null) {
         print('byteData is null');
@@ -77,7 +77,8 @@ class _QR_GeneratorState extends State<QR_Generator> {
   }
 
   Widget _contentWidget() {
-    final bodyHeight = MediaQuery.of(context).size.height - MediaQuery.of(context).viewInsets.bottom;
+    final bodyHeight = MediaQuery.of(context).size.height -
+        MediaQuery.of(context).viewInsets.bottom;
     return Container(
       color: const Color(0xFFFFFFFF),
       child: Column(
